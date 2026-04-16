@@ -5,66 +5,76 @@
   margin: 0px;
   padding: 0px;
 }
+html, body {
+  min-height: 100vh;
+}
 body {
   font-family: Arial, Verdana, sans-serif;
 }
 header {
   background-color: black;
   text-align: center;
-  height: 115px;
-  padding-top: 55px;
+  padding-top: 50px;
   color: white;
 }
 header h1 {
-  font-size: 2.5em;
+  font-size: 10vw;
   font-family: 'Passion One', sans-serif;
+  font-variant: small-caps;
+}
+header p {
+  padding-bottom: 50px;
+  font-size: 2.5vw;
+}
+p {
+  line-height: 2em;
 }
 main p {
-  padding: 0px 30px 3px 30px;
+  padding: 0px 30px;
   font-family: "Sriracha", cursive;
 }
 section {
-  padding-bottom: 60px;
-  padding-top: 80px;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+  font-size: 3.5vw;
 }
-article {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 200px;
-  margin-left: 30px;
-  margin-right: 0px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-article p {
-  padding-left: 5px;
-  padding-right: 0px;
-  margin-right: 0px;
-}
-section.imagem-de-fundo-1 {
+section#img01 {
   background-image: url('imagens/background001.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-attachment: fixed;
-  padding-bottom: 80px;
-  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.6);
 }
-section.imagem-de-fundo-2 {
+section#img02 {
   background-image: url('imagens/background002.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
   background-attachment: fixed;
-  padding-bottom: 80px;
-  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.6);
 }
-div {
-  margin-bottom: 40px;
+section>p {
+  margin-bottom: 8vw;
+}
+article {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 30px;
+  margin-right: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 8px;
+  display: inline-block;
+}
+article p {
+  padding-left: 5px;
+  padding-right: 0px;
+  margin-right: 0px;
+  text-shadow: 1px 1px  0px black;
 }
 a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: bolder;
   color: white;
 }
 a:hover {
@@ -75,4 +85,5 @@ footer {
   color: white;
   text-align: center;
   padding: 5px;
+  font-size: 2.5vw;
 }
